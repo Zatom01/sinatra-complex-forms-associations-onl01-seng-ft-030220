@@ -1,1 +1,8 @@
-index.erb
+<h1>ALL PETS</h1>
+
+<%@pets.each do |pet| %>
+  <%=pet.name%><br>
+<%end%>
+
+<a href="/owners/new">Create a New Owner</a><br />
+<a href="/pets/new">Create a New Pet</a><br />
